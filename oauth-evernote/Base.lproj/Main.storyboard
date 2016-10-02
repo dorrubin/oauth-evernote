@@ -4,7 +4,6 @@
         <deployment version="2336" identifier="iOS"/>
         <development version="7000" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -13,15 +12,15 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="oauth_evernote" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="FfO-s1-twF"/>
+                        <viewControllerLayoutGuide type="bottom" id="V7g-wd-IJc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="q0c-53-nta">
-                                <rect key="frame" x="106" y="71" width="560" height="493"/>
+                                <rect key="frame" x="110" y="103" width="560" height="461"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="21" text="Meal Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcj-3b-6Qk">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="21"/>
@@ -44,31 +43,30 @@
                                         </connections>
                                     </button>
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="aEz-3i-1aZ">
-                                        <rect key="frame" x="0.0" y="117" width="320" height="320"/>
+                                        <rect key="frame" x="0.0" y="117" width="320" height="288"/>
                                         <gestureRecognizers/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="aEz-3i-1aZ" secondAttribute="height" multiplier="1:1" id="XYD-vD-Akq"/>
+                                            <constraint firstAttribute="height" constant="288" id="shu-Y1-UGJ"/>
                                         </constraints>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="HnK-Mb-p74" appends="YES" id="7U1-D1-wfL"/>
                                         </connections>
                                     </imageView>
-                                    <view contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="WVy-Nk-IVb" customClass="RatingControl" customModule="oauth_evernote" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="449" width="240" height="44"/>
+                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="WVy-Nk-IVb" customClass="RatingControl" customModule="oauth_evernote" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="417" width="240" height="44"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="4bh-db-hCd" firstAttribute="leading" secondItem="q0c-53-nta" secondAttribute="leading" id="Li3-Gg-wPd"/>
-                                    <constraint firstAttribute="trailing" secondItem="4bh-db-hCd" secondAttribute="trailing" id="Q1v-uu-67h"/>
+                                    <constraint firstItem="4bh-db-hCd" firstAttribute="trailing" secondItem="Zcj-3b-6Qk" secondAttribute="trailing" id="gYb-oQ-Jlc"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="q0c-53-nta" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="K1q-o0-ZXV"/>
-                            <constraint firstItem="q0c-53-nta" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="ReM-uX-OUo"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="q0c-53-nta" secondAttribute="trailing" id="VY7-nR-xG4"/>
+                            <constraint firstItem="q0c-53-nta" firstAttribute="top" secondItem="FfO-s1-twF" secondAttribute="bottom" constant="60" id="BZW-ia-8Gn"/>
+                            <constraint firstItem="q0c-53-nta" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="VPQ-X4-nJH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="q0c-53-nta" secondAttribute="trailing" id="vbW-Sq-6kK"/>
                         </constraints>
                     </view>
                     <connections>
@@ -84,7 +82,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="304" y="122"/>
+            <point key="canvasLocation" x="304" y="121.99999999999999"/>
         </scene>
     </scenes>
     <resources>
