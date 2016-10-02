@@ -39,7 +39,7 @@
 		2720DD1D1D9AEDDF00E66F6B /* oauth-evernoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "oauth-evernoteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2720DD221D9AEDDF00E66F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2720DD231D9AEDDF00E66F6B /* oauth_evernoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oauth_evernoteTests.swift; sourceTree = "<group>"; };
-		2742DA1A1D9DA5D2007653CC /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RatingControl.swift; path = ../RatingControl.swift; sourceTree = "<group>"; };
+		2742DA1A1D9DA5D2007653CC /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RatingControl.swift; path = "/Users/DorRubin/Documents/BU/3_semester/EC601/HW/2_HW/oauth-evernote/oauth-evernote/RatingControl.swift"; sourceTree = "<absolute>"; };
 		2742DA1C1DA08CF0007653CC /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
