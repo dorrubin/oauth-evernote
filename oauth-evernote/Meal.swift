@@ -15,10 +15,10 @@ class Meal {
     var rating: Int
     
     // MARK: Initialization
-    init?(name: String, photo: UIImage? = nil, rating: Int) {
+    init?(name: String, photo: UIImage?, rating: Int) {
         self.name = name
         self.rating = rating
-        self.photo = (photo)!
+        self.photo = photo
         
         
         // Failed initialization
