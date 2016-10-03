@@ -16,6 +16,8 @@
 		2742DA1B1D9DA5D2007653CC /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2742DA1A1D9DA5D2007653CC /* RatingControl.swift */; };
 		2742DA1D1DA08CF0007653CC /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2742DA1C1DA08CF0007653CC /* Meal.swift */; };
 		2742DA201DA08FD6007653CC /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2742DA1C1DA08CF0007653CC /* Meal.swift */; };
+		2742DA251DA2A186007653CC /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2742DA241DA2A186007653CC /* MealTableViewCell.swift */; };
+		2742DA2B1DA2A5AE007653CC /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2742DA2A1DA2A5AE007653CC /* MealTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 		2720DD231D9AEDDF00E66F6B /* oauth_evernoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oauth_evernoteTests.swift; sourceTree = "<group>"; };
 		2742DA1A1D9DA5D2007653CC /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RatingControl.swift; path = "/Users/DorRubin/Documents/BU/3_semester/EC601/HW/2_HW/oauth-evernote/oauth-evernote/RatingControl.swift"; sourceTree = "<absolute>"; };
 		2742DA1C1DA08CF0007653CC /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		2742DA241DA2A186007653CC /* MealTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
+		2742DA2A1DA2A5AE007653CC /* MealTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,9 +86,11 @@
 		2720DD0A1D9AEDDF00E66F6B /* oauth-evernote */ = {
 			isa = PBXGroup;
 			children = (
+				2742DA2A1DA2A5AE007653CC /* MealTableViewController.swift */,
 				2720DD0D1D9AEDDF00E66F6B /* AppDelegate.swift */,
 				2720DD0F1D9AEDDF00E66F6B /* ViewController.swift */,
 				2742DA1C1DA08CF0007653CC /* Meal.swift */,
+				2742DA241DA2A186007653CC /* MealTableViewCell.swift */,
 				2742DA1A1D9DA5D2007653CC /* RatingControl.swift */,
 				2720DD111D9AEDDF00E66F6B /* Main.storyboard */,
 				2720DD141D9AEDDF00E66F6B /* Assets.xcassets */,
@@ -224,6 +230,8 @@
 				2720DD101D9AEDDF00E66F6B /* ViewController.swift in Sources */,
 				2742DA1B1D9DA5D2007653CC /* RatingControl.swift in Sources */,
 				2720DD0E1D9AEDDF00E66F6B /* AppDelegate.swift in Sources */,
+				2742DA2B1DA2A5AE007653CC /* MealTableViewController.swift in Sources */,
+				2742DA251DA2A186007653CC /* MealTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
