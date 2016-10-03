@@ -22,6 +22,6 @@ class oauth_evernoteTests: XCTestCase {
         
         //bad rating
         let badRating = Meal(name: "Bad bad", photo: nil, rating: -4)
-        XCTAssertNotNil(badRating, "Should not be negative")
+        XCTAssertNil(badRating, "Should not be negative")
     }
 }
