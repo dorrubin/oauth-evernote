@@ -7,10 +7,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Meal Table View Controller-->
         <scene sceneID="11g-pA-IzC">
             <objects>
-                <tableViewController id="jxV-5y-sVs" sceneMemberID="viewController">
+                <tableViewController id="jxV-5y-sVs" customClass="MealTableViewController" customModule="oauth_evernote" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="22" sectionFooterHeight="22" id="nqc-h5-Vj7">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,10 +55,10 @@
             </objects>
             <point key="canvasLocation" x="-400" y="122"/>
         </scene>
-        <!--View Controller-->
+        <!--Meal View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="oauth_evernote" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MealViewController" customModule="oauth_evernote" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FfO-s1-twF"/>
                         <viewControllerLayoutGuide type="bottom" id="V7g-wd-IJc"/>
@@ -68,21 +68,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="q0c-53-nta">
-                                <rect key="frame" x="20" y="69" width="560" height="419"/>
+                                <rect key="frame" x="20" y="69" width="560" height="386"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="21" text="Meal Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcj-3b-6Qk">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4bh-db-hCd">
-                                        <rect key="frame" x="0.0" y="33" width="560" height="30"/>
+                                        <rect key="frame" x="216" y="0.0" width="129" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="aEz-3i-1aZ">
-                                        <rect key="frame" x="120" y="75" width="320" height="288"/>
+                                        <rect key="frame" x="120" y="42" width="320" height="288"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="288" id="shu-Y1-UGJ"/>
@@ -92,13 +86,10 @@
                                         </connections>
                                     </imageView>
                                     <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="WVy-Nk-IVb" customClass="RatingControl" customModule="oauth_evernote" customModuleProvider="target">
-                                        <rect key="frame" x="160" y="375" width="240" height="44"/>
+                                        <rect key="frame" x="160" y="342" width="240" height="44"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="4bh-db-hCd" firstAttribute="trailing" secondItem="Zcj-3b-6Qk" secondAttribute="trailing" id="gYb-oQ-Jlc"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -109,7 +100,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="mealNameLabel" destination="Zcj-3b-6Qk" id="4RR-cx-7pw"/>
                         <outlet property="nameTextField" destination="4bh-db-hCd" id="h08-XI-KuH"/>
                         <outlet property="photoImageView" destination="aEz-3i-1aZ" id="vdp-O3-dDT"/>
                         <outlet property="ratingControl" destination="WVy-Nk-IVb" id="t7e-st-GhS"/>
