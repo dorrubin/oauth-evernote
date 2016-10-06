@@ -69,6 +69,10 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     }
     // MARK: Navigation
 
+    @IBAction func cancel(sender: UIBarButtonItem) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     // configure the view controller
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if saveButton === sender {
