@@ -17,11 +17,15 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     
     @IBOutlet weak var ratingControl: RatingControl!
     
+    @IBOutlet weak var saveButton: UIBarButtonItem!
+    var meal: Meal?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Handle text field callback
         nameTextField.delegate = self
+        checkValidMealName()
         
     }
     // MARK: UITextFieldDelegate
@@ -32,7 +36,17 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     }
     
     func textFieldDidEndEditing(textField: UITextField) {
-        //mealNameLabel.text = textField.text
+        checkValidMealName()
+        navigationItem.title = textField.text
+    }
+    
+    func textFieldDidBeginEditing(textField: UITextField) {
+        saveButton.enabled = false
+    }
+    
+    func checkValidMealName() {
+        let text = nameTextField.text ?? ""
+        saveButton.enabled = !text.isEmpty
     }
     
     //MARK: UIImagePickerControllerDelegate
@@ -53,6 +67,20 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         dismissViewControllerAnimated(true, completion: nil)
         
     }
+    // MARK: Navigation
+
+    // configure the view controller
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if saveButton === sender {
+            let name = nameTextField.text ?? ""
+            let photo = photoImageView.image
+            let rating = ratingControl.rating
+            
+            meal = Meal(name: name, photo: photo, rating: rating)
+            
+        }
+    }
+    
     
     // MARK: Actions
     
